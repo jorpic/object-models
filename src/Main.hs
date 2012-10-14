@@ -5,7 +5,6 @@ import AllModels
 
 testObjects =
   [
-  ,
   ]
 
-dispatch
+main = undefined

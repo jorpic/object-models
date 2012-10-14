@@ -6,13 +6,12 @@ module Triggers where
 import Data.Time (UTCTime)
 import Model
 import Model.Case
-import Model.BaseObj
 
 
 type TriggerMonad = IO
 
-data Trigger cls = forall typ . Trigger
-  {tField :: Field cls typ
+data Trigger cls = forall typ opt . Trigger
+  {tField :: Field opt cls typ
   ,tFns   :: [typ -> Ident cls -> TriggerMonad ()]
   }
 

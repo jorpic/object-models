@@ -1,6 +1,5 @@
 
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE TemplateHaskell #-}
 
 module Model.Dictionaries where
 

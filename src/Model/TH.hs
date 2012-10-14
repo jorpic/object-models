@@ -24,5 +24,4 @@ modelClasses :: Q Exp
 modelClasses = do
   names <- runIO $ readMVar xxx
   infos <- mapM reify names
-  extract
   return $ ListE $ map (LitE . StringL . show) names

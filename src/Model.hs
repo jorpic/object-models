@@ -1,8 +1,6 @@
 
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TypeFamilies, MultiParamTypeClasses, FlexibleInstances #-}
+{-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE DeriveDataTypeable #-}
--- {-# LANGUAGE ScopedTypeVariables #-}
 
 module Model
   (Object

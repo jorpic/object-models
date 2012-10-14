@@ -1,0 +1,49 @@
+Name:                object-models
+Version:             0.1
+
+Homepage:            http://github.com/jorpic/object-models
+License:             MIT
+License-file:        LICENSE
+Author:              Max Taldykin
+Maintainer:          max@formalmethods.ru
+
+Category:            Database
+Build-type:          Simple
+
+
+-- Constraint on the version of Cabal needed to build this package.
+Cabal-version:       >=1.2
+
+-- Extra files to be distributed with the package, such as examples or
+-- a README.
+Extra-source-files:  
+                     Triggers.hs
+
+Library
+  hs-source-dirs:    src
+  Exposed-modules:   Model,
+                     Main,
+                     AllModels,
+                     Model.Dictionaries,
+                     Model.TH,
+                     Model.Case
+  
+  -- Packages needed in order to build this package.
+  Build-depends:     base,
+                     aeson,
+                     containers,
+                     text,
+                     time,
+                     template-haskell
+  
+  Extensions:        OverloadedStrings,
+                     MultiParamTypeClasses,
+                     FlexibleInstances,
+                     EmptyDataDecls
+
+  -- Modules not exported by this package.
+  -- Other-modules:       
+  
+  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
+  -- Build-tools:         
+  
